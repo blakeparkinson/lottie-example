@@ -1,0 +1,21 @@
+<head>
+    <script src="./lottie.js"></script>
+
+</head>
+
+<body>
+    <div>hello world</div>
+    <div id="test">
+
+    </div>
+</body>
+<script>
+    console.log(lottie)
+    lottie.loadAnimation({
+        container: document.getElementById('test'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://blakeparkinson.s3-us-west-2.amazonaws.com/data.json' // the path to the animation json
+    });
+</script>
